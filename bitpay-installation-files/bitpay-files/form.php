@@ -50,7 +50,7 @@
      header('Location: ' . $invresp['url']);
    else
      bplog($invresp['error']['message']);
-     echo('BitPay Transaction Error:<br />"' . $invresp['error']['message'] . '"<br />Please contact the site administrator');
+     echo('GloBee Transaction Error:<br />"' . $invresp['error']['message'] . '"<br />Please contact the site administrator');
      die();
  } else {
    die();

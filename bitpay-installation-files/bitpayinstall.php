@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>BitPay Installation Script</title>
+<title>GloBee Installation Script</title>
 </head>
 <?php
     $step = (isset($_GET['step']) && $_GET['step'] != '') ? $_GET['step'] : '';
@@ -24,7 +24,7 @@
     //Step 1: Beginning installation message, no functional purpose
     function step_1() {
     ?>
-        <p>This install script will check the directories for the version of Membership that you are using and then install the bitpay plugin files in their appropriate directories. Press continue to proceed with installation.</p>
+        <p>This install script will check the directories for the version of Membership that you are using and then install the globee plugin files in their appropriate directories. Press continue to proceed with installation.</p>
         <form action="bitpayinstall.php?step=2" method="post">
             <input type="submit" value="Continue" />
         </form>
@@ -138,7 +138,7 @@
         if ($pre_error == '') {
             //no errors, show continue button
         ?>
-            <p>Installation was successful! Please manually delete bitpayinstall.php and any other bitpay installation files before continuing.</p>
+            <p>Installation was successful! Please manually delete bitpayinstall.php and any other globee installation files before continuing.</p>
             <form action="wp-admin" method="post">
                 <input type="submit" value="Continue" />
             </form>

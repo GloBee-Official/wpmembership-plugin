@@ -2,18 +2,15 @@
 
 This is a Community-supported project.
 
-If you are interested in becoming a maintainer of this project, please contact us at integrations@bitpay.com. Developers at BitPay will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
+If you are interested in becoming a maintainer of this project, please contact us at integrations@globee.com. Developers at GloBee will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
 
 # Description
 
-Bitcoin payment plugin for WPMU Membership using the bitpay.com service.
-
-[![Build Status](https://travis-ci.org/bitpay/wpmembership-plugin.svg)](https://travis-ci.org/bitpay/wpmembership-plugin)
-
+Bitcoin payment plugin for WPMU Membership using the globee.com service.
 
 ## Quick Start Guide
 
-To get up and running with our plugin quickly, see the GUIDE here: https://github.com/bitpay/wpmembership-plugin/blob/master/GUIDE.md
+To get up and running with our plugin quickly, see the GUIDE here: https://github.com/GloBee-Official/wpmembership-plugin/blob/master/GUIDE.md
 
 
 ## Support
@@ -21,9 +18,9 @@ To get up and running with our plugin quickly, see the GUIDE here: https://githu
 **BitPay Support:**
 
 * Last Version Tested: 3.5.x
-* [Github Issues](https://github.com/bitpay/wpmembership-plugin/issues)
+* [Github Issues](https://github.com/GloBee-Official/wpmembership-plugin/issues)
   * Open an Issue if you are having issues with this plugin
-* [Support](https://help.bitpay.com)
+* [Support](https://help.globee.com)
   * BitPay merchant support documentation
 
 **WPMU Membership Support:**
@@ -35,14 +32,13 @@ To get up and running with our plugin quickly, see the GUIDE here: https://githu
 
 ## Troubleshooting
 
-The official BitPay API documentation should always be your first reference for development, errors and troubleshooting:
-https://bitpay.com/downloads/bitpayApi.pdf
+The official GloBee API documentation should always be your first reference for development, errors and troubleshooting.
 
 Some web servers have outdated root CA certificates and will cause this curl error: "SSL certificate problem, verify that the CA cert is OK. Details: error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed'".  The fix is to contact your hosting provider or server administrator and request a root CA cert update.
 
 The log file is named 'bplog.txt' and can be found in the same directory as the plugin files. Checking this log file will give you exact responses from the BitPay network, in case of failures.
 
-Check the version of this plugin agains the official repository to ensure you are using the latest version. Your issue might have been addressed in a newer version of the plugin: https://github.com/bitpay/wpmembership-plugin
+Check the version of this plugin agains the official repository to ensure you are using the latest version. Your issue might have been addressed in a newer version of the plugin: https://github.com/GloBee-Official/wpmembership-plugin
 
 ## Contribute
 

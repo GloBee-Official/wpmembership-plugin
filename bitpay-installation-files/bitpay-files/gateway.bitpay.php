@@ -100,7 +100,7 @@ class bitpay extends M_Gateway {
 	function mysettings() {
 		// BitPay requires the use of SSL
 		if (!is_ssl())
-			echo '<div id="message" class="updated fade"><p>' . __('The BitPay plugin requires an SSL certificate to be installed on this domain', 'membership') . '</p></div>';
+			echo '<div id="message" class="updated fade"><p>' . __('The GloBee plugin requires an SSL certificate to be installed on this domain', 'membership') . '</p></div>';
 
 		global $M_options;
 
@@ -211,7 +211,7 @@ class bitpay extends M_Gateway {
 
 		$button = get_option( $this->gateway . "_bitpay_button", 'https://button_URL_goes_here' );
 
-		$form .= '<input type="image" name="submit" border="0" src="' . $button . '" alt="Bitcoin payments via BitPay">';
+		$form .= '<input type="image" name="submit" border="0" src="' . $button . '" alt="Bitcoin payments via GloBee">';
 		$form .= '</form>';
 
 		return $form;
@@ -364,7 +364,7 @@ class bitpay extends M_Gateway {
 
 				case 'invalid':
 					// payment has been deemed invalid. bad transaction!
-					$note = 'This payment has been marked as invalid. Do not process membership! BitPay Invoice ID: ' . $response['id'];
+					$note = 'This payment has been marked as invalid. Do not process membership! GloBee Invoice ID: ' . $response['id'];
 					$amount = $response['price'];
 					$currency = $response['currency'];
 

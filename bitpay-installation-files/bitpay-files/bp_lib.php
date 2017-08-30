@@ -213,9 +213,9 @@ function bpCreateInvoice($orderId, $price, $posData, $options = array(), $networ
       $post = bpJSONencode($post);
 
     if($network == 'test')
-      $network_uri = 'test.bitpay.com';
+      $network_uri = 'test.globee.com';
     else
-      $network_uri = 'bitpay.com';
+      $network_uri = 'globee.com';
 
     $response = bpCurl('https://' . $network_uri . '/api/invoice/', $options['apiKey'], $post);
 
@@ -286,7 +286,7 @@ function bpVerifyNotification($apiKey = false, $network = false) {
 
 /**
  *
- * Retrieves an invoice from BitPay.  $options can include 'apiKey'
+ * Retrieves an invoice from GloBee.  $options can include 'apiKey'
  *
  * @param string $invoiceId, boolean $apiKey
  * @return mixed $json
@@ -302,9 +302,9 @@ function bpGetInvoice($invoiceId, $apiKey=false, $network = false) {
       $apiKey = $bpOptions['apiKey'];
 
     if($network == 'test')
-      $network_uri = 'test.bitpay.com';
+      $network_uri = 'test.globee.com';
     else
-      $network_uri = 'bitpay.com';
+      $network_uri = 'globee.com';
 
     $response = bpCurl('https://' . $network_uri . '/api/invoice/'.$invoiceId, $apiKey);
 
@@ -395,7 +395,7 @@ function bpCurrencyList() {
   global $bpOptions;
 
   $currencies = array();
-  $rate_url = 'https://bitpay.com/api/rates';
+  $rate_url = 'https://globee.com/api/rates';
 
   try {
     if(function_exists('json_decode'))
@@ -429,7 +429,7 @@ function bpCurrencyList() {
 function bpGetRate($code = 'USD') {
   global $bpOptions;
 
-  $rate_url = 'https://bitpay.com/api/rates';
+  $rate_url = 'https://globee.com/api/rates';
 
   try {
     if(function_exists('json_decode'))
