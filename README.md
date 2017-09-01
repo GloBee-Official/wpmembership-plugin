@@ -4,6 +4,10 @@ This is a Community-supported project.
 
 If you are interested in becoming a maintainer of this project, please contact us at integrations@globee.com. Developers at GloBee will attempt to work along the new maintainers to ensure the project remains viable for the foreseeable future.
 
+# GloBee plugin for WPMU Membership
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/GloBee-Official/wpmembership-plugin/master/LICENSE.txt)
+
 # Description
 
 Bitcoin payment plugin for WPMU Membership using the globee.com service.
@@ -15,13 +19,13 @@ To get up and running with our plugin quickly, see the GUIDE here: https://githu
 
 ## Support
 
-**BitPay Support:**
+**GloBee Support:**
 
 * Last Version Tested: 3.5.x
 * [Github Issues](https://github.com/GloBee-Official/wpmembership-plugin/issues)
   * Open an Issue if you are having issues with this plugin
 * [Support](https://help.globee.com)
-  * BitPay merchant support documentation
+  * GloBee merchant support documentation
 
 **WPMU Membership Support:**
 
@@ -36,22 +40,10 @@ The official GloBee API documentation should always be your first reference for 
 
 Some web servers have outdated root CA certificates and will cause this curl error: "SSL certificate problem, verify that the CA cert is OK. Details: error:14090086:SSL routines:SSL3_GET_SERVER_CERTIFICATE:certificate verify failed'".  The fix is to contact your hosting provider or server administrator and request a root CA cert update.
 
-The log file is named 'bplog.txt' and can be found in the same directory as the plugin files. Checking this log file will give you exact responses from the BitPay network, in case of failures.
+The log file is named 'bplog.txt' and can be found in the same directory as the plugin files. Checking this log file will give you exact responses from the GloBee network, in case of failures.
 
 Check the version of this plugin agains the official repository to ensure you are using the latest version. Your issue might have been addressed in a newer version of the plugin: https://github.com/GloBee-Official/wpmembership-plugin
 
 ## Contribute
 
 To contribute to this project, please fork and submit a pull request.
-
-## License
-
-The MIT License (MIT)
-
-Copyright (c) 2011-2015 BitPay
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
